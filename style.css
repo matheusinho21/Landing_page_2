@@ -1,1 +1,38 @@
+/* Estilos para o menu fixo */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(42, 92, 88); /* Cor de fundo do menu */
+    padding: 50px 0;
+    z-index: 1000; /* Para garantir que o menu fique na frente de outros elementos */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff; /* Cor do texto do menu */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #065c72; /* Cor do texto do menu ao passar o mouse */
+}
+.my-text {
+    font-family: 'family=kanit', sans-serif;
+}
 
