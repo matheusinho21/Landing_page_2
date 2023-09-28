@@ -1,10 +1,11 @@
 /* Estilos para o menu fixo */
 .menu {
+  max-height: 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(42, 92, 88); /* Cor de fundo do menu */
+    background-color: rgb(65, 0, 65); /* Cor de fundo do menu */
     padding: 50px 0;
     z-index: 1000; /* Para garantir que o menu fique na frente de outros elementos */
 }
@@ -13,7 +14,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: center;Início Planos Dúvidas? Sobre Contato
 }
 
 .menu li {
@@ -32,7 +33,14 @@
 .menu a:hover {
     color: #065c72; /* Cor do texto do menu ao passar o mouse */
 }
-.my-text {
-    font-family: 'family=kanit', sans-serif;
-}
+ body {
+   font-family: 'Raleway', sans-serif;
+ }
 
+ .logo img{
+   position: relative;
+   top: -45px;
+   left: -400px;
+   height: auto;
+   width: 100px;
+ }
