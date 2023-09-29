@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(65, 0, 65); /* Cor de fundo do menu */
+    background-color: #410041; /* Cor de fundo do menu */
     padding: 50px 0;
     z-index: 1000; /* Para garantir que o menu fique na frente de outros elementos */
 }
@@ -31,7 +31,7 @@
 }
 
 .menu a:hover {
-    color: #065c72; /* Cor do texto do menu ao passar o mouse */
+    color: #cc00ff; /* Cor do texto do menu ao passar o mouse */
 }
  body {
    font-family: 'Raleway', sans-serif;
@@ -44,3 +44,15 @@
    height: auto;
    width: 100px;
  }
+ .content {
+   margin-top: 80px; 
+}
+.footer {
+   background-color: #410041;(0, 247, 255);
+   color: rgb(255, 255, 255);
+   padding: 20px;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
