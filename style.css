@@ -1,61 +1,245 @@
-/* Estilos para o menu fixo */
-.menu {
-  max-height: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-   background-color: #1b004e;(0, 247, 255);
-    background-color: ; /* Cor de fundo do menu */
-    padding: 50px 0;
-    z-index: 1000; /* Para garantir que o menu fique na frente de outros elementos */
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  position: relative;
 }
 
 
-.menu li {
-    display: inline;
-    margin: 0 20px;
+.topo {
+  background-color: #12045e;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
 }
 
-.menu a {
-    text-decoration: none;
-    color: rgb(255, 255, 255); /* Cor do texto do menu */
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s;
+#logo {
+  background-color: #12045e(22, 167, 154);
+
 }
 
-.menu a:hover {
-    font-size: 25px;
-     /* Cor do texto do menu ao passar o mouse */
-}
- body {
-   font-family: 'Raleway', sans-serif;
- }
 
- .logo img{
-   position: relative;
-   top: -45px;
-   left: -400px;
-   height: auto;
-   width: 100px;
- }
- .content {
-   margin-top: 80px; 
+#logo-img {
+  padding: 10px;
+
 }
-.footer {
-   background-color: #1b004e;(0, 247, 255);
-   color: rgb(255, 255, 255);
-   padding: 20px;
-   position: fixed;
-   bottom: 0;
-   left: 0;
-   right: 0;
+
+.navbar {
+  background-color: #12045e(22, 167, 154);
+  max-width: 800px;
+  margin-left: auto;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar:hover {
+  font-style: oblique;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-links li {
+  display: inline;
+  margin-right: 100px;
+}
+
+
+.nav-links li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.nav-links li a:hover {
+  color: white;
+  font-size: 30px;
+  font-style: initial;
+}
+
+/*  menu ate aqui */
+
+
+
+.main {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+
+.container {
+  background: url("https://horadecodar.com.br/wp-content/uploads/2023/07/Melhores-projetos-front-end-1024x683.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.frase-1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.frase-2 {
+  font-family: cursive;
+  color: rgb(248, 248, 248);
+  font-size: 32px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+
+
+
+
+/*rodape*/
+footer {
+  width: 100%;
+  color: var(--color-neutral-40);
+  position: relative;
+}
+
+:root {
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #12045e;
+  --color-neutral-30: #ffffff;
+  --color-neutral-40: #f5f5f5;
+
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  background-color: var(--color-neutral-10);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: var(--color-neutral-30);
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: #7f37c9;
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#footer_subscribe p {
+  color: var(--color-neutral-30);
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-0);
+  border-radius: 4px;
+}
+
+#input_group input {
+  all: unset;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: #7f37c9;
+  border: none;
+  color: var(--color-neutral-40);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#input_group button:hover {
+  opacity: 0.8;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-neutral-0);
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
